@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+.oufei-dialog {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba($color: #000000, $alpha: .5);
+
+  .in {
+    width: px(562);
+    height: px(646);
+    position: absolute;
+    left: 52%;
+    top: 49%;
+    transform: translate(-50%, -50%);
+    background-size: 100% 100%;
+    background-image: url(../images/dialog-bg.png);
+  }
+
+  .title {
+    padding-top: px(57);
+    font-size: px(44);
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+    line-height: px(54);
+
+    img {
+      width: px(76);
+      vertical-align: middle;
+      margin-right: px(18);
+      padding-left: px(21);
+      vertical-align: middle;
+    }
+  }
+
+  .about {
+    text-align: left;
+    width: px(460);
+    padding-right: px(20);
+    font-size: px(30);
+    line-height: px(45);
+    height: px(45*5);
+    color: rgba(47, 47, 47, 1);
+    margin: px(130) auto px(30);
+  }
+
+  .d-button {
+    width: px(370);
+    height: px(86);
+    line-height: px(86);
+    background: rgba(255, 128, 71, 1);
+    text-align: center;
+    font-size: px(30);
+    color: rgba(255, 255, 255, 1);
+    margin:0 auto px(70) auto;
+    border-radius: px(86);
+  }
+
+  .d-close {
+    width: px(52);
+    height: px(52);
+    position: absolute;
+    left: 50%;
+    margin-left: px(-26);
+    bottom: px(-100);
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+}

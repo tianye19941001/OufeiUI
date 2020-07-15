@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+	<title>Document</title>
+	<!-- 插件样式 -->
+	<link rel="stylesheet" href="styles/OufeiUI.css">
+</head>
+
+<body>
+	<span id="click-dialog">点击出弹窗</span>
+	<!-- jq库 -->
+	<script src="./javascript/jquery.min.js"></script>
+	<!-- 欧飞插件js -->
+	<script src="./javascript/OufeiUI.js"></script>
+	<script>
+		var uiDialog = new OufeiUI({
+			type: 'dialog', //类型，暂时只有dialog，以后根据需求扩展
+			typeData: {
+				domId: 'click-dialog', //触发dialog的id
+				title: '提醒', // dialog标题
+				about: '这是一段提醒，不要超过第二行', //dialog介绍
+				// autoClose: 5000, //自动关闭时间，可选
+				callback: function() { //回调函数
+					alert(1212)
+				}
+			}
+		})
+	</script>
+</body>
+</html>
